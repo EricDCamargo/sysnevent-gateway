@@ -1,0 +1,1 @@
+{"root":["../src/gateway.routes.ts","../src/server.ts","../src/@types/app.types.ts","../src/@types/express/index.d.ts","../src/errors/apperror.ts","../src/middlewares/isauthenticated.ts"],"version":"5.8.3"}

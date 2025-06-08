@@ -1,7 +1,6 @@
 import express, { NextFunction, Request, Response } from 'express'
 import cors from 'cors'
 import { StatusCodes } from 'http-status-codes'
-import dotenv from 'dotenv'
 import { gatewayRouter } from './gateway.Routes'
 
 const app = express()
