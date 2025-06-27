@@ -42,5 +42,7 @@ const proxyWithLogging = (prefix, target, preservePath) => (0, http_proxy_middle
 router.use('/participants', proxyWithLogging('/participants', process.env.PARTICIPANT_SERVICE, false));
 // === EVENT SERVICE ===
 router.use('/events', proxyWithLogging('/events', process.env.EVENT_SERVICE, false));
+// === REPORTS SERVICE ===
+router.use('/reports', proxyWithLogging('/reports', process.env.REPORT_SERVICE, false));
 // === USER SERVICE — passando todo o tráfego para ele ===
 router.use('/', proxyWithLogging('/', process.env.USER_SERVICE, true));
